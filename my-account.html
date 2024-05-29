@@ -281,10 +281,10 @@
                                         </li>
                                         <li><a href="index.php" class="nav-link menu-title">Home</a></li>
                                         <li><a href="shop.php" class="nav-link menu-title">Shop</a></li>   
-                                        <li><a href="cart.php" class="nav-link menu-title">Cart</a></li>                                                                                 
-                                        <li><a href="about-us.php" class="nav-link menu-title">About Us</a></li>
-                                        <li><a href="contact-us.php" class="nav-link menu-title">Contact Us</a></li>
-                                        <li class="dropdown">
+                                        <li><a href="cart/list.html" class="nav-link menu-title">Cart</a></li>                                                                                 
+                                        <!-- <li><a href="about-us.php" class="nav-link menu-title">About Us</a></li>
+                                        <li><a href="contact-us.php" class="nav-link menu-title">Contact Us</a></li> -->
+                                        <!-- <li class="dropdown">
                                             <a href="javascript:void(0)" class="nav-link menu-title">blog</a>
                                             <ul class="nav-submenu menu-content">
                                                 <li>
@@ -294,7 +294,7 @@
                                                     <a href="blog-infinite-scroll.php">Blog Infinite Scroll</a>
                                                 </li>                                               
                                             </ul>
-                                        </li>
+                                        </li> -->
                                         <li class="mobile-poster d-flex d-xl-none">
                                             <img src="assets/images/pwa.png" class="img-fluid" alt="">
                                             <div class="mobile-contain">
@@ -323,20 +323,17 @@
                                     <div class="onhover-div profile-dropdown">
                                         <ul>
                                             <li>
-                                                <a href="my-account.php" class="d-block">My Account</a>
+                                                <a href="my-account.html" class="d-block">My Account</a>
                                             </li>
                                             <li>
-                                                <a href="login.php" class="d-block">Login</a>
-                                            </li>
-                                            <li>
-                                                <a href="register.php" class="d-block">Register</a>
+                                                <a href="index.htm" class="d-block">Logout</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li class="onhover-dropdown wislist-dropdown">
                                     <div class="cart-media">
-                                        <a href="wishlist.php">
+                                        <a href="wishlist.html">
                                             <i data-feather="heart"></i>
                                             <span class="label label-theme rounded-pill">5</span>
                                         </a>
@@ -544,7 +541,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h3>User Dashboard</h3>
+                    <h3>Customer Dashboard</h3>
                     <nav>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
@@ -552,7 +549,7 @@
                                     <i class="fas fa-home"></i>
                                 </a>
                             </li>
-                            <li class="breadcrumb-item active" aria-current="page">User Dashboard</li>
+                            <li class="breadcrumb-item active" aria-current="page">Customer Dashboard</li>
                         </ol>
                     </nav>
                 </div>
@@ -572,7 +569,7 @@
                         </li>
 
                         <li class="nav-item mb-2">
-                            <button class="nav-link font-light" id="1-tab" data-bs-toggle="tab" data-bs-target="#order" type="button"><i class="fas fa-angle-right"></i>Orders</button>
+                            <button class="nav-link font-light" id="1-tab" data-bs-toggle="tab" data-bs-target="#order" type="button"><i class="fas fa-angle-right"></i>Subscriptions</button>
                         </li>
 
                         <li class="nav-item mb-2">
@@ -726,7 +723,7 @@
 
                         <div class="tab-pane fade table-dashboard dashboard wish-list-section" id="order">
                             <div class="box-head mb-3">
-                                <h3>My Order</h3>
+                                <h3>My Subscriptions</h3>
                             </div>
                             <div class="table-responsive">
                                 <table class="table cart-table">
@@ -735,6 +732,7 @@
                                             <th scope="col">image</th>
                                             <th scope="col">Order Id</th>
                                             <th scope="col">Product Details</th>
+                                            <th scope="col">Duration</th>
                                             <th scope="col">Status</th>
                                             <th scope="col">Price</th>
                                             <th scope="col">View</th>
@@ -754,7 +752,10 @@
                                                 <p class="fs-6 m-0">Outwear & Coats</p>
                                             </td>
                                             <td>
-                                                <p class="success-button btn btn-sm">Shipped</p>
+                                                <p class="fs-6 m-0">3 months</p>
+                                            </td>
+                                            <td>
+                                                <p class="success-button btn btn-sm">Active</p>
                                             </td>
                                             <td>
                                                 <p class="theme-color fs-6">$49.54</p>
@@ -779,7 +780,10 @@
                                                 <p class="fs-6 m-0">Outwear & Coats</p>
                                             </td>
                                             <td>
-                                                <p class="danger-button btn btn-sm">Pending</p>
+                                                <p class="fs-6 m-0">3 months</p>
+                                            </td>
+                                            <td>
+                                                <p class="danger-button btn btn-sm">Expired</p>
                                             </td>
                                             <td>
                                                 <p class="theme-color fs-6">$49.54</p>
@@ -804,7 +808,10 @@
                                                 <p class="fs-6 m-0">Men's Sweatshirt</p>
                                             </td>
                                             <td>
-                                                <p class="success-button btn btn-sm">Shipped</p>
+                                                <p class="fs-6 m-0">6 months</p>
+                                            </td>
+                                            <td>
+                                                <p class="success-button btn btn-sm">Active</p>
                                             </td>
                                             <td>
                                                 <p class="theme-color fs-6">$49.54</p>
@@ -829,7 +836,10 @@
                                                 <p class="fs-6 m-0">Men's Hoodie t-shirt</p>
                                             </td>
                                             <td>
-                                                <p class="success-button btn btn-sm">Shipped</p>
+                                                <p class="fs-6 m-0">2 months</p>
+                                            </td>
+                                            <td>
+                                                <p class="success-button btn btn-sm">Active</p>
                                             </td>
                                             <td>
                                                 <p class="theme-color fs-6">$49.54</p>
@@ -852,6 +862,9 @@
                                             </td>
                                             <td>
                                                 <p class="fs-6 m-0">Men's Hoodie t-shirt</p>
+                                            </td>
+                                            <td>
+                                                <p class="fs-6 m-0">12 months</p>
                                             </td>
                                             <td>
                                                 <p class="danger-button btn btn-sm">Canceled</p>
@@ -877,6 +890,9 @@
                                             </td>
                                             <td>
                                                 <p class="fs-6 m-0">Men's Sweatshirt</p>
+                                            </td>
+                                            <td>
+                                                <p class="fs-6 m-0">3 months</p>
                                             </td>
                                             <td>
                                                 <p class="danger-button btn btn-sm">Canceled</p>
