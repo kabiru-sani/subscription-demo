@@ -314,13 +314,13 @@
                     </div>
                     <div class="input">
                         <label for="name">Username</label>
-                        <input type="email" id="username" name="email" :value="old('email')" required="" autofocus=""
+                        <input type="email" id="name" name="email" :value="old('email')" required="" autofocus=""
                             autocomplete="name">
                     </div>
 
                     <div class="input">
                         <label for="pass">Password</label>
-                        <input type="password" id="password" class="block mt-1 w-full" name="password" required=""
+                        <input type="password" id="pass" class="block mt-1 w-full" name="password" required=""
                             autocomplete="current-password">
                     </div>
 
@@ -552,16 +552,16 @@
     function auth(event) {
     event.preventDefault();
 
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+    var name = document.getElementById("name").value;
+    var pass = document.getElementById("pass").value;
 
-    if (username.length == "" || password.length == "") {
+    if (name.length == "" || pass.length == "") {
         alert("Username or password cannot be empty!");
         return;
-    } else if (username === "user@demo" && password === "12345") {
+    } else if (name === "user@demo" && pass === "12345") {
         window.location.replace("my-account.html");
      
-    }else if (username === "admin@demo" && password === "12345") {
+    }else if (name === "admin@demo" && pass === "12345") {
         window.location.replace("admin.dashboard.html");
     }
      else {
